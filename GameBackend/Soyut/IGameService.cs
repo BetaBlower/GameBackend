@@ -6,8 +6,10 @@ namespace GameBackend
 {
     interface IGameService
     {
-        void Ekle(Games games);
-        void Kaldır(Games games);
-        void Güncelle(Games games);
+        void Ekle(Games games);//soyut olarak interface'e metot tanımı yap
+        void Kaldir(Games games);//soyut olarak interface'e metot tanımı yap
+        void Guncelle(Games games);//soyut olarak interface'e metot tanımı yap
+
+        //bunu yapmamızın sebebi ilerde yeni metotlar eklemek istersek bunu diğer kodlara dokunmadan halledebilmek için
     }
 }

@@ -6,8 +6,10 @@ namespace GameBackend
 {
     interface IKampanyaService
     {
-        void Ekle(Kampanya kampanya);
-        void Kaldır(Kampanya kampanya);
-        void Güncelle(Kampanya kampanya);
+        void Ekle(Kampanya kampanya);//soyut olarak interface'e metot tanımı yap
+        void Kaldir(Kampanya kampanya);//soyut olarak interface'e metot tanımı yap
+        void Guncelle(Kampanya kampanya);//soyut olarak interface'e metot tanımı yap
+
+        //bunu yapmamızın sebebi ilerde yeni metotlar eklemek istersek bunu diğer kodlara dokunmadan halledebilmek için
     }
 }

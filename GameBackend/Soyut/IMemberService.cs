@@ -6,8 +6,10 @@ namespace GameBackend
 {
     public interface IMemberService 
     {
-        void Ekle(Members members);
-        void Kaldır(Members members);
-        void Güncelle(Members members);
+        void Ekle(Members members); //soyut olarak interface'e metot tanımı yap
+        void Kaldir(Members members);//soyut olarak interface'e metot tanımı yap
+        void Guncelle(Members members);//soyut olarak interface'e metot tanımı yap
+
+        //bunu yapmamızın sebebi ilerde yeni metotlar eklemek istersek bunu diğer kodlara dokunmadan halledebilmek için
     }
 }
