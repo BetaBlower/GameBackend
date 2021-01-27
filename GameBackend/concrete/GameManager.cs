@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameBackend
 {
-    class GameManager 
+    class GameManager :IGameService
     {
         public void Ekle(Games games)
         {

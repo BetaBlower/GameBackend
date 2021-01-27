@@ -4,21 +4,21 @@ using System.Text;
 
 namespace GameBackend
 {
-    class KampanyaManager : IService
+    class KampanyaManager : IKampanyaService
     {
-        public void Ekle()
+        public void Ekle(Kampanya kampanya)
         {
-            Console.WriteLine("kampanya eklendi");
+            Console.WriteLine("{0} kampanyası eklendi = {1} ",kampanya.KampanyaAdi,kampanya.KampanyaAciklama);
         }
 
-        public void Güncelle()
+        public void Güncelle(Kampanya kampanya)
         {
-            Console.WriteLine("kampanya güncellendi");
+            Console.WriteLine("{0} kampanyası güncellendi",kampanya.KampanyaAdi);
         }
 
-        public void Kaldır()
+        public void Kaldır(Kampanya kampanya)
         {
-            Console.WriteLine("kampanya kaldırıldı");
+            Console.WriteLine("{0} kampanyası kaldırıldı",kampanya.KampanyaAdi);
         }
     }
 }

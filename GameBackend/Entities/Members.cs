@@ -10,6 +10,6 @@ namespace GameBackend
         public string Adi { get; set; }
         public string SoyAdi { get; set; }
         public string TcNo { get; set; }
-        public DateTime DoğumYılı { get; set; }
+        public int DoğumYılı { get; set; }
     }
 }

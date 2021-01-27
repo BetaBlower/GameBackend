@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameBackend
 {
-    public class MemberManager 
+    public class MemberManager : IMemberService
     {
         public void Ekle(Members members)
         {
@@ -13,6 +13,10 @@ namespace GameBackend
             if (checkRealMemberManager.Check(members))
             {
                 Console.WriteLine("{0} sisteme eklendi", members.Adi);
+            }
+            else
+            {
+                Console.WriteLine("Hesap  uyuşmadı");
             }
 
         }
